@@ -1,0 +1,22 @@
+field,availability,timing_reason
+age,conditional,Client attribute; historical snapshot unverified
+job,conditional,Client attribute; historical snapshot unverified
+marital,conditional,Client attribute; historical snapshot unverified
+education,conditional,Client attribute; historical snapshot unverified
+default,conditional,Client attribute; historical snapshot unverified
+housing,conditional,Client attribute; historical snapshot unverified
+loan,conditional,Client attribute; historical snapshot unverified
+contact,conditional,Must be planned and available before this call
+month,conditional,Calendar is known; last-call selection is retrospective
+day_of_week,conditional,Calendar is known; last-call selection is retrospective
+duration,exclude,Post-call: unavailable at t0
+campaign,conditional,Requires decision-time count; final total may contain future contacts
+pdays,conditional,History candidate; validate snapshot and sentinel semantics
+previous,conditional,History candidate; validate snapshot
+poutcome,conditional,History candidate; validate snapshot
+emp.var.rate,conditional,Publication lag and revisions require as-of release data
+cons.price.idx,conditional,Publication lag and revisions require as-of release data
+cons.conf.idx,conditional,Publication lag and revisions require as-of release data
+euribor3m,conditional,Daily value must be published before t0
+nr.employed,conditional,Publication lag and revisions require as-of release data
+y,target,Outcome only; never a predictor

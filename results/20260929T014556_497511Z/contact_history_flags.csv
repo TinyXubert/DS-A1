@@ -1,0 +1,5 @@
+,flagged_n
+previous=0 but outcome exists,0
+previous>0 but outcome nonexistent,0
+previous=0 but elapsed days recorded,0
+previous>0 but pdays=999 (review),4110

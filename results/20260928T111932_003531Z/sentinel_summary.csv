@@ -1,0 +1,6 @@
+,value
+pdays_sentinel_999_n,39673.0
+pdays_non_sentinel_n,1515.0
+naive_mean_including_999,962.4754540157328
+mean_excluding_999,6.014521452145215
+rows_with_any_unknown,10700.0

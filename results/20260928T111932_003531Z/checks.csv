@@ -1,0 +1,45 @@
+check,passed,detail
+shape,True,"(41188, 21)"
+column names and order,True,"['age', 'job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'duration', 'campaign', 'pdays', 'previous', 'poutcome', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed', 'y']"
+numeric: age,True,int64
+numeric: duration,True,int64
+numeric: campaign,True,int64
+numeric: pdays,True,int64
+numeric: previous,True,int64
+numeric: emp.var.rate,True,float64
+numeric: cons.price.idx,True,float64
+numeric: cons.conf.idx,True,float64
+numeric: euribor3m,True,float64
+numeric: nr.employed,True,float64
+categories: job,True,{'unexpected': []}
+categories: marital,True,{'unexpected': []}
+categories: education,True,{'unexpected': []}
+categories: default,True,{'unexpected': []}
+categories: housing,True,{'unexpected': []}
+categories: loan,True,{'unexpected': []}
+categories: contact,True,{'unexpected': []}
+categories: month,True,{'unexpected': []}
+categories: day_of_week,True,{'unexpected': []}
+categories: poutcome,True,{'unexpected': []}
+categories: y,True,{'unexpected': []}
+target present and binary,True,"{'no': 36548, 'yes': 4640}"
+integer and finite: age,True,Every value must be a finite integer
+integer and finite: duration,True,Every value must be a finite integer
+integer and finite: campaign,True,Every value must be a finite integer
+integer and finite: pdays,True,Every value must be a finite integer
+integer and finite: previous,True,Every value must be a finite integer
+lower bound: age,True,count below 1: 0
+lower bound: duration,True,count below 0: 0
+lower bound: campaign,True,count below 1: 0
+lower bound: previous,True,count below 0: 0
+lower bound: pdays,True,count below 0: 0
+finite: age,True,No NaN or infinity
+finite: duration,True,No NaN or infinity
+finite: campaign,True,No NaN or infinity
+finite: pdays,True,No NaN or infinity
+finite: previous,True,No NaN or infinity
+finite: emp.var.rate,True,No NaN or infinity
+finite: cons.price.idx,True,No NaN or infinity
+finite: cons.conf.idx,True,No NaN or infinity
+finite: euribor3m,True,No NaN or infinity
+finite: nr.employed,True,No NaN or infinity

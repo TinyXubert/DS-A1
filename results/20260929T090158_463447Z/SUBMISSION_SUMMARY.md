@@ -1,0 +1,8 @@
+## SUBMISSION_SUMMARY
+This audit examines whether users of the UCI Bank Marketing additional-full dataset can treat all recorded inputs as information available before the last marketing call. The audit focuses on the validity of a pre-call prediction interpretation rather than training a predictive model.
+
+The analysis uses 41,188 campaign records from the bank-additional-full.csv variant. I documented the dataset provenance, license, retrieval information, data hash, schema, and data-generating process. The audit performs reproducible checks of field definitions, ranges, missingness, duplicate records, anomalies, and information availability.
+
+The audit identified several measurement issues. Although the dataset contains no parser-level null values, it includes 12,718 unknown-coded entries across 10,700 records. The pdays=999 value is a documented sentinel indicating no previous contact rather than an elapsed time measurement. A duplicate audit found 12 excess identical rows, but they were retained because identical records do not establish duplicate customers.
+
+The main counterexample is duration, which is observed after the last call and therefore cannot support a valid pre-call prediction setting. Removing this variable is necessary but does not prove that all remaining variables were available at decision time. Therefore, the dataset supports careful descriptive auditing and restricted modeling use, but it does not by itself justify claims about deployment performance, causal effects, or general population behavior. 

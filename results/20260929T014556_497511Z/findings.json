@@ -1,0 +1,15 @@
+{
+  "rows": 41188,
+  "columns": 21,
+  "subscription_fraction": 0.11265417111780131,
+  "parser_null_cells": 0,
+  "unknown_cells": 12718,
+  "rows_with_unknown": 10700,
+  "pdays_999_rows": 39673,
+  "exact_extra_rows": 12,
+  "conflicting_feature_groups": 0,
+  "schema_type_flags": 0,
+  "schema_category_flags": 0,
+  "range_flags": 0,
+  "availability_verdict": "Reject all-input pre-call interpretation: duration is observed after the call"
+}

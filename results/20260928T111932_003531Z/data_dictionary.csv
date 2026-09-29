@@ -1,0 +1,22 @@
+field,meaning,unit,observed_dtype,documented_domain,special_encoding,availability,timing_reason,definition_source
+age,Client age,years,int64,numeric; see range audit,none specified,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+job,Job category,category,object,admin. | blue-collar | entrepreneur | housemaid | management | retired | self-employed | services | student | technician | unemployed | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+marital,Marital status; divorced includes widowed,category,object,divorced | married | single | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+education,Education category,category,object,basic.4y | basic.6y | basic.9y | high.school | illiterate | professional.course | university.degree | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+default,Credit in default,category,object,no | yes | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+housing,Housing loan,category,object,no | yes | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+loan,Personal loan,category,object,no | yes | unknown,unknown = unrecorded/unknown category,conditional,Client attribute; historical snapshot unverified,bank-additional-names.txt
+contact,Last contact channel,category,object,cellular | telephone,none specified,conditional,Must be planned and available before this call,bank-additional-names.txt
+month,Month of last contact,month category,object,jan | feb | mar | apr | may | jun | jul | aug | sep | oct | nov | dec,none specified,conditional,Calendar is known; last-call selection is retrospective,bank-additional-names.txt
+day_of_week,Weekday of last contact,weekday category,object,mon | tue | wed | thu | fri,none specified,conditional,Calendar is known; last-call selection is retrospective,bank-additional-names.txt
+duration,Last call duration,seconds,int64,numeric; see range audit,none specified,exclude,Post-call: unavailable at t0,bank-additional-names.txt
+campaign,"Contacts in current campaign, including last",count,int64,numeric; see range audit,none specified,conditional,Requires decision-time count; final total may contain future contacts,bank-additional-names.txt
+pdays,Days since prior-campaign contact; 999 denotes no prior contact,days or sentinel,int64,numeric; see range audit,999 = no prior contact; do not treat as elapsed days,conditional,History candidate; validate snapshot and sentinel semantics,bank-additional-names.txt
+previous,Contacts before current campaign,count,int64,numeric; see range audit,none specified,conditional,History candidate; validate snapshot,bank-additional-names.txt
+poutcome,Previous campaign outcome,category,object,failure | nonexistent | success,none specified,conditional,History candidate; validate snapshot,bank-additional-names.txt
+emp.var.rate,"Employment variation rate, quarterly",rate (scale not fully specified),float64,numeric; see range audit,none specified,conditional,Publication lag and revisions require as-of release data,bank-additional-names.txt
+cons.price.idx,"Consumer price index, monthly",index,float64,numeric; see range audit,none specified,conditional,Publication lag and revisions require as-of release data,bank-additional-names.txt
+cons.conf.idx,"Consumer confidence index, monthly",index,float64,numeric; see range audit,none specified,conditional,Publication lag and revisions require as-of release data,bank-additional-names.txt
+euribor3m,"Three-month Euribor, daily",rate,float64,numeric; see range audit,none specified,conditional,Daily value must be published before t0,bank-additional-names.txt
+nr.employed,"Number employed, quarterly",scale not specified in local readme,float64,numeric; see range audit,none specified,conditional,Publication lag and revisions require as-of release data,bank-additional-names.txt
+y,Term deposit subscribed,yes/no,object,no | yes,none specified,target,Outcome only; never a predictor,bank-additional-names.txt

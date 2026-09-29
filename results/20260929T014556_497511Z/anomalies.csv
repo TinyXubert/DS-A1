@@ -1,0 +1,5 @@
+review_rule,n,subscription_fraction
+age > 100,0,
+duration = 0,4,0.0
+duration > 3600 seconds,5,0.6
+campaign > 20,157,0.006369426751592357

@@ -1,0 +1,5 @@
+rule,flagged_rows
+previous=0 but poutcome is not nonexistent,0
+previous>0 but poutcome is nonexistent,0
+previous=0 but pdays is not 999,0
+previous>0 but pdays=999 (semantic tension; inspect),4110

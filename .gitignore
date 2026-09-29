@@ -1,0 +1,5 @@
+.venv/
+.runtime/
+.validation/
+.ipynb_checkpoints/
+__pycache__/
